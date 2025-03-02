@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-chart-line"></i> Stock Analyzer</h1>
+            <p>Identify value opportunities in the Indian stock market</p>
+        </header>
+        
+        <div class="categories">
+            <div class="category-box">
+                <h2>Large Cap</h2>
+                <p>Blue chip companies with established track records</p>
+                <a href="{{ url_for('show_stocks', cap_type='Large Cap') }}" class="btn">
+                    <i class="fas fa-building"></i> View Large Cap Stocks
+                </a>
+            </div>
+            
+            <div class="category-box">
+                <h2>Mid Cap</h2>
+                <p>Growing companies with potential for expansion</p>
+                <a href="{{ url_for('show_stocks', cap_type='Mid Cap') }}" class="btn">
+                    <i class="fas fa-industry"></i> View Mid Cap Stocks
+                </a>
+            </div>
+            
+            <div class="category-box">
+                <h2>Small Cap</h2>
+                <p>Emerging companies with high growth potential</p>
+                <a href="{{ url_for('show_stocks', cap_type='Small Cap') }}" class="btn">
+                    <i class="fas fa-rocket"></i> View Small Cap Stocks
+                </a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Data sourced from National Stock Exchange (NSE) | Updated daily</p>
+        </footer>
+    </div>
+</body>
+</html>
