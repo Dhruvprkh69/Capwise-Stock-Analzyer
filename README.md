@@ -2,8 +2,6 @@
 
 A Flask-based web application for analyzing stocks from the National Stock Exchange (NSE) of India. The app categorizes stocks into Large Cap, Mid Cap, and Small Cap, and helps identify potential value investment opportunities by showing which stocks are trading below their 52-week highs.
 
-![Stock Analyzer Screenshot](https://via.placeholder.com/800x450)
-
 ## Features
 
 - **Stock Categories**: Browse stocks by market capitalization (Large Cap, Mid Cap, Small Cap)
